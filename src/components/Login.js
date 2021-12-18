@@ -1,7 +1,18 @@
 import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 import {Form, Button } from 'react-bootstrap'
 
 const Login = () => {
+    //for controlling form inputs
+    const { register, handleSubmit, formState: { errors } } = useForm()
+    //State of Login
+    const [successMessage, setSuccessMessage ] = useState(" ")
+    const [errorMessage, setErrorMessage ] = useState(" ")
+    const [userDetails, setUserDetails ] = useState(" ")
+
+    const onSubmit = () => {
+        //API call to login user
+    }
     return (
         <Form className="input-form">
             <Form.Group className="mb-3" controlId="email">
