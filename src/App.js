@@ -1,13 +1,10 @@
 import './App.css';
-
+import AppRouter from "./router/AppRouter"
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        {/* <FirstStep /> */}
-        <SecondStep />
-        {/* <ThirdStep /> */}
+        <AppRouter />
     </div>
   );
 }
